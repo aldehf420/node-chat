@@ -1,6 +1,6 @@
 window.onload = function(){
  //클라이언트 소켓 생성
- var socket = io.connect('ws://127.0.0.1:3000');
+ var socket = io.connect('http://18.209.66.161:5000');
  //DOM 참조
  var div = document.getElementById('message');
  var txt = document.getElementById('txtChat');

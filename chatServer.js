@@ -16,7 +16,7 @@ app.use(function(req, res){
 
 //http 서버 생성
 var server = require('http').createServer(app);
-server.listen(3000);
+server.listen(5000);
 console.log("listening at http://127.0.0.1:3000...");
 
 //클로저를 사용해, private한 유니크 id를 만든다
