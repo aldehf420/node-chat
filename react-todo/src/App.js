@@ -1,50 +1,22 @@
-import React, {Component} from 'react';
-import './App.css';
-import Message from './Message.js'
-import { Card, CardImg, CardText, CardBody, CardLink,
-    CardTitle, CardSubtitle } from 'reactstrap';
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Chat from "./components/Chat";
+import Message from "./components/Message";
+import Login from "./components/Login";
+import Signup from "./components/Signup";
+import Main from "./components/Main";
 
-
-
-class App extends Component{
-
-  state = {
-    messages:[]
-  };
-
-  key = 0;
-
-  handleCreate = (data) => {
-    const { messages } = this.state;
-    this.setState({
-      messages : messages.concat(
-          {
-            data,
-            key:this.key++
-          }
-      )
-    });
-  };
-
-  render(){
-
-    const list = this.state.messages.map(info => (
-        <div key={info.key}>{info.data}</div>
-    ));
-
-    const style = {
-      border: "1px solid black",
-      padding: "8px",
-      margin: "8px",
-      height:"200px",
-    };
-
+class App extends Component {
+  render() {
     return (
-        <div>
-                    <div style={style}>{list}</div>
-                    <Message
-                        onCreate={this.handleCreate}/>
-        </div>
+        <Router>
+          <div>
+              <Route exact path="/" component={Main} />
+            <Route path="/Chat" component={Chat} />
+            <Route path="/Login" component={Login} />
+            <Route path="/Signup" component={Signup} />
+          </div>
+        </Router>
     );
   }
 }
