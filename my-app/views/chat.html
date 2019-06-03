@@ -47,11 +47,11 @@
 			});
 			socket.on("chat", function (data) {
 				if(data.username == "<%=username%>") {
-					$("#chatlog").append("<ul style='float: right; padding-left: 5px; padding-right:5px; border-radius: 5px;  margin: 10px; color: black; background-color: white; max-width: fit-content;'><li>" + data.msg + "</li></ul>");
+					$("#chatlog").append("<ul style='float: right; opacity: 0.5; padding-left: 5px; padding-right:5px; border-radius: 5px;  margin: 10px; color: black; background-color: white; max-width: fit-content;'><li>" + data.msg + "</li></ul>");
 					$("#chatlog").append("<li></li>");
 				}
 				else{
-					$("#chatlog").append("<ul style='float: left; padding-left: 5px; padding-right:5px; border-radius: 5px;  margin: 10px; color: black; background-color: white; max-width: fit-content;''><li><strong>" + data.username + "</strong>" + " : " + data.msg + "</li></ul>");
+					$("#chatlog").append("<ul style='float: left; opacity: 0.5; padding-left: 5px; padding-right:5px; border-radius: 5px;  margin: 10px; color: black; background-color: white; max-width: fit-content;''><li><strong>" + data.username + "</strong>" + " : " + data.msg + "</li></ul>");
 					$("#chatlog").append("<li></li>");
 				}
 				// Chatting panel scroll to bottom
