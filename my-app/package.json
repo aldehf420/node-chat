@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "package-linux": "electron-packager . my-app --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/1024x1024.png --prune=true --out=release-builds"
   },
   "author": "",
   "license": "ISC",
@@ -13,5 +13,9 @@
     "express": "^4.17.1",
     "mysql": "^2.17.1",
     "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "electron": "^1.4.3",
+    "electron-packager": "^13.1.1"
   }
 }

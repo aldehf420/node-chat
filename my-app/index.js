@@ -1,3 +1,16 @@
+//const electron = require('electron')
+//var path = require('path')
+
+//mainWindow = new BrowserWindow({titleBarStyle: 'hidden',
+    //width: 800,
+    //height: 800,
+    //minWidth: 800,
+    //minHeight: 800,
+    //backgroundColor: '#312450',
+    //show: false,
+    //icon: path.join(__dirname,
+    //'assets/icons/png/64x64.png')})
+
 var express = require('express');
 var app = express();
 
