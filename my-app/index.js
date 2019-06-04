@@ -50,21 +50,21 @@ app.get('/', function(req, res) {
 });
 
 app.post('/', function(req, res){
-	var name = req.body.name;
+	var id = req.body.id;
 	var pwd = req.body.pwd;
 
-	var sql = `SELECT * FROM user_info WHERE username = ?`;
-	//? 은 [name]에서 name 값을 의미
-	connection.query(sql, [name], function(error, results, fields){
+	var sql = `SELECT * FROM user_info WHERE id = ?`;
+	connection.query(sql, [id], function(error, results, fields){
 		if(results.length == 0){
 			res.render('login.html');
-		} 
+		}
 		else{
+			var db_name = results[0].username;
 			var db_pwd = results[0].password;
 
 			if(pwd == db_pwd){
 				//res.redirect('/chat');
-				res.render('chat.html', {username : name});
+				res.render('chat.html', {username : db_name});
 			}
 			else{
 				res.render('login.html');
@@ -79,19 +79,21 @@ app.get('/register', function(req, res) {
 
 app.post('/register', function(req, res){
 	var name = req.body.name;
+	var id = req.body.id;
 	var pwd = req.body.pwd;
 	var pwdconf = req.body.pwdconf;
 
 	if(pwd == pwdconf){
 		//DB에 쿼리 알리기
-		var sql = `INSERT INTO user_info VALUES(?, ?)`;
-		connection.query(sql, [name, pwd], function(error, results, fields){
-			console.log(results);
+		var sql = `INSERT INTO user_info VALUES(?, ?, ?)`;
+		connection.query(sql, [name, id, pwd], function(error, results, fields){
+
 		});
 
 		res.redirect('/');
 	}
 	else{
+		res.render(alert("비밀번호 오류"));
 		res.render('register.html');
 	}
 });
