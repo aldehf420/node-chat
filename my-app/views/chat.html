@@ -40,10 +40,10 @@
 				username: "<%= username%>"
 			});
 			socket.on("login", function (data) {
-				$("#chatlog").append("<li><strong>" + data + "</strong> has joined</li>");
+				$("#chatlog").append("<li style='border-radius: 5px; text-align: center; color: black; background-color: #ABADAF; opacity: 0.5; margin-bottom: 10px;'><strong>" + data + "</strong> has joined</li></ul>");
 			});
 			socket.on("logout", function (data) {
-				$("#chatlog").append("<li><strong>" + data + "</strong> has exited</li>");
+				$("#chatlog").append("<li style='border-radius: 5px; text-align: center; color: black; background-color: #ABADAF; opacity: 0.5; margin-bottom: 10px;'><strong>" + data + "</strong> has exited</li></ul>");
 			});
 			socket.on("chat", function (data) {
 				var date = new Date();
