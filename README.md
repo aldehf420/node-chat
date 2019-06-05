@@ -1,4 +1,4 @@
-<img src="https://github.com/HochulHwang/node-chat/tree/master/my-app/assets/img/likeFirstTimeTalk.png">
+![likeFirstTimeTalk](./img/likeFirstTimeTalk.png)
 
 -----------------
 
