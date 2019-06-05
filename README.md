@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://www.tensorflow.org/images/tf_logo_social.png">
+  <img src="https://github.com/HochulHwang/node-chat/tree/master/my-app/assets/img/likeFirstTimeTalk.png">
 </div>
 
 -----------------
@@ -13,7 +13,7 @@
 ## Screenshots 
 
 <div align="center">
-  <img src="https://www.tensorflow.org/images/tf_logo_social.png">
+  <img src="https://github.com/HochulHwang/node-chat/tree/master/my-app/assets/img/likeFirstTimeTalk.png">
 </div>
 
 
