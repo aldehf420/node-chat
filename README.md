@@ -1,6 +1,4 @@
-<div align="center">
-  <img src="https://github.com/HochulHwang/node-chat/tree/master/my-app/assets/img/likeFirstTimeTalk.png">
-</div>
+<img src="https://github.com/HochulHwang/node-chat/tree/master/my-app/assets/img/likeFirstTimeTalk.png">
 
 -----------------
 
@@ -11,13 +9,9 @@
 
 
 ## Screenshots 
-<div align="center">
-  <img src="https://github.com/HochulHwang/node-chat/tree/master/my-app/assets/img/screen-login.png">
-</div>
-<div align="center">
-  <img src="https://github.com/HochulHwang/node-chat/tree/master/my-app/assets/img/screen-chat.png">
-</div>
+<img src="https://github.com/HochulHwang/node-chat/tree/master/my-app/assets/img/screen-login.png">
 
+<img src="https://github.com/HochulHwang/node-chat/tree/master/my-app/assets/img/screen-chat.png">
 
 
 ## Installation
