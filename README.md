@@ -24,10 +24,12 @@
 
 ## Installation
 
-To install the current release:
+To install the current release:  
 
+- Git clone  
+- Insert in terminal  
 ```
-sudo apt install ./name.deb
+cd ./node-chat/Chchrum-talk/dist && sudo apt install ./Chchrum-Talk_1.0.0_amd64.deb
 ```
 
 
