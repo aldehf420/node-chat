@@ -1,4 +1,8 @@
-![likeFirstTimeTalk](./my-app/assets/img/likeFirstTimeTalk.png)
+.center {
+  display: block;
+  margin: auto;
+}
+![likeFirstTimeTalk](./my-app/assets/img/likeFirstTimeTalk.png){: width="300" height="300"){: .center}
 
 -----------------
 
