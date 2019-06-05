@@ -1,8 +1,4 @@
-.center {
-  display: block;
-  margin: auto;
-}
-![likeFirstTimeTalk](./my-app/assets/img/likeFirstTimeTalk.png){: width="300" height="300"){: .center}
+![likeFirstTimeTalk](./my-app/assets/img/likeFirstTimeTalk.png)
 
 -----------------
 
@@ -12,10 +8,19 @@
 <처음처럼 톡>은 개발자 그룹 <처음이조>에서 개발되었다. 
 
 
-## Screenshots 
-<img src="https://github.com/HochulHwang/node-chat/tree/master/my-app/assets/img/screen-login.png">
+## 처음이조 
+이름 | 분야 | 담당 
+---|:---:|---:
+`고동현` | backend | 서버 연동 및 팀장
+`백승민` | backend | DB 연동
+`황호철` | backend | 패키징
+`문수림` | frontend | 디자인 및 서기
+`박재현` | frontend | 개발
+`최준호` | frontend | 디자인 및 개발
 
-<img src="https://github.com/HochulHwang/node-chat/tree/master/my-app/assets/img/screen-chat.png">
+## Screenshots 
+![screen-login](./my-app/assets/img/screen-login.png)
+![screen-chat](./my-app/assets/img/screen-chat.png)
 
 
 ## Installation
