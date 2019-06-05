@@ -7,31 +7,37 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
 	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
 	<link rel="stylesheet" href="css/style.css">
-	<script src="/javascript/my-js.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/v4-shims.css">
+
+	<style>
+		input::placeholder {
+			color: white;
+			opacity: 0.5;
+		}
+	</style>
 </head>
 
 <body>
 <div class="cont">
-	<div class="demo">
+	<div class="demo" style="height: 550px">
 		<form class="login" action="/register" method="POST">
-			<div class="login__check"></div>
-			<div class="login__form">
+			<div style=" padding-left: 118px; padding-top: 100px"><i style="color : white" class="fas fa-user-plus fa-10x"></i></div>
+			<div class="login__form" style="top: 40%;">
 				<div class="login__row">
-					<svg class="login__icon name svg-icon" viewBox="0 0 20 20">
-						<path d="M0,20 a10,8 0 0,1 20,0z M10,0 a4,4 0 0,1 0,8 a4,4 0 0,1 0,-8" />
-					</svg>
-					<input type="text" class="login__input name" placeholder="Username" name="name"/>
+					<i style="color: white;" class="far fa-user fa-3x"></i>
+					<input type="text" class="login__input pass" placeholder="Username" name="name"/>
 				</div>
 				<div class="login__row">
-					<svg class="login__icon pass svg-icon" viewBox="0 0 20 20">
-						<path d="M0,20 20,20 20,8 0,8z M10,13 10,16z M4,8 a6,8 0 0,1 12,0" />
-					</svg>
+					<i style="color: white;" class="far fa-id-badge fa-3x"></i>
+					<input type="text" class="login__input name" placeholder="Id" name="id"/>
+				</div>
+				<div class="login__row">
+					<i style="color: white;" class="fas fa-unlock-alt fa-3x"></i>
 					<input type="password" class="login__input pass" placeholder="Password" name="pwd"/>
 				</div>
 				<div class="login__row">
-					<svg class="login__icon pass svg-icon" viewBox="0 0 20 20">
-						<path d="M0,20 20,20 20,8 0,8z M10,13 10,16z M4,8 a6,8 0 0,1 12,0" />
-					</svg>
+					<i style="color: white;" class="fas fa-unlock-alt fa-3x"></i>
 					<input type="password" class="login__input pass" placeholder="Confirm" name="pwdconf"/>
 				</div>
 				<input type="submit" class="login__submit" value="Register"/>

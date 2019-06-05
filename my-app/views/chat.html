@@ -15,12 +15,12 @@
 <body>
 	<div class="cont">
 		<div class="demo">
-			<div class="login" style="height: 300px; margin-top: 200px;">
-				<div id="chatpanel" class="uk-panel uk-panel-scrollable uk-width-1-1" style="min-width: 100%; max-height: 300px; min-height: 100px; height: 300px;">
+			<div class="login" style="height: 600px; margin-top: 100px;">
+				<div id="chatpanel" class="uk-panel uk-panel-scrollable uk-width-1-1" style="min-width: 100%; height: 600px;">
 					<ul id = chatlog class="uk-list" style="color: white; font-size: 16px;" >
 					</ul>
 				</div>
-				<form id="myform">
+				<form id="myform" style="position: relative">
 					<div class="uk-margin-small-top">
 						<div class="uk-inline uk-width-1-1">
 							<button class="uk-form-icon uk-form-icon-flip" uk-icon="icon: comment" type="submit"></button>
@@ -40,18 +40,23 @@
 				username: "<%= username%>"
 			});
 			socket.on("login", function (data) {
-				$("#chatlog").append("<li><strong>" + data + "</strong> has joined</li>");
+				$("#chatlog").append("<li style='border-radius: 5px; text-align: center; color: black; background-color: #ABADAF; opacity: 0.5; margin-bottom: 10px;'><strong>" + data + "</strong> has joined</li></ul>");
 			});
 			socket.on("logout", function (data) {
-				$("#chatlog").append("<li><strong>" + data + "</strong> has exited</li>");
+				$("#chatlog").append("<li style='border-radius: 5px; text-align: center; color: black; background-color: #ABADAF; opacity: 0.5; margin-bottom: 10px;'><strong>" + data + "</strong> has exited</li></ul>");
 			});
 			socket.on("chat", function (data) {
+				var date = new Date();
+				var hour = date.getHours();
+				var minute = date.getMinutes();
 				if(data.username == "<%=username%>") {
-					$("#chatlog").append("<ul style='float: right; opacity: 0.5; padding-left: 5px; padding-right:5px; border-radius: 5px;  margin: 10px; color: black; background-color: white; max-width: fit-content;'><li>" + data.msg + "</li></ul>");
+					$("#chatlog").append("<ul style='float: right;  opacity: 0.5; padding-left: 5px; padding-right:5px; border-radius: 5px;  margin: 10px; color: black; background-color: white; max-width: fit-content;'><li>" + data.msg + "</li></ul>");
+					$("#chatlog").append("<li style='float: right'>" + hour + ":" + minute + "</li>");
 					$("#chatlog").append("<li></li>");
 				}
 				else{
-					$("#chatlog").append("<ul style='float: left; opacity: 0.5; padding-left: 5px; padding-right:5px; border-radius: 5px;  margin: 10px; color: black; background-color: white; max-width: fit-content;''><li><strong>" + data.username + "</strong>" + " : " + data.msg + "</li></ul>");
+					$("#chatlog").append("<ul style='float: left;  opacity: 0.5; padding-left: 5px; padding-right:5px; border-radius: 5px;  margin: 10px; color: black; background-color: white; max-width: fit-content;''><li><strong>" + data.username + "</strong>" + " : " + data.msg + "</li></ul>");
+					$("#chatlog").append("<li>" + hour + ":" + minute + "</li>");
 					$("#chatlog").append("<li></li>");
 				}
 				// Chatting panel scroll to bottom
