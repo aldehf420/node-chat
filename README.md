@@ -11,10 +11,13 @@
 
 
 ## Screenshots 
-
 <div align="center">
-  <img src="https://github.com/HochulHwang/node-chat/tree/master/my-app/assets/img/likeFirstTimeTalk.png">
+  <img src="https://github.com/HochulHwang/node-chat/tree/master/my-app/assets/img/screen-login.png">
 </div>
+<div align="center">
+  <img src="https://github.com/HochulHwang/node-chat/tree/master/my-app/assets/img/screen-chat.png">
+</div>
+
 
 
 ## Installation
