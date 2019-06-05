@@ -18,7 +18,7 @@ var connection = mysql.createConnection({
 	host: 'localhost',
 	user: 'root',
 	post: 3306,
-	password: '',
+	password: '123456',
 	database: 'my_db'
 });
 
