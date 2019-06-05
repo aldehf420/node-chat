@@ -1,4 +1,4 @@
-![likeFirstTimeTalk](./my-app/assets/img/likeFirstTimeTalk.png)
+![likeFirstTimeTalk](./my-app/assets/img/icon-image.png)
 
 -----------------
 
