@@ -1,4 +1,4 @@
-![likeFirstTimeTalk](./img/likeFirstTimeTalk.png)
+![likeFirstTimeTalk](./tree/master/my-app/assets/img/likeFirstTimeTalk.png)
 
 -----------------
 
