@@ -59,7 +59,7 @@ input, button {
 .login {
   position: relative;
   height: 100%;
-  background: linear-gradient(to bottom, rgb(3, 97, 3) 30%, white 100%);
+  background: linear-gradient(to top, rgb(3, 97, 3) 30%, white 100%);
   transition: opacity 0.1s, -webkit-transform 0.3s cubic-bezier(0.17, -0.65, 0.665, 1.25);
   transition: opacity 0.1s, transform 0.3s cubic-bezier(0.17, -0.65, 0.665, 1.25);
   transition: opacity 0.1s, transform 0.3s cubic-bezier(0.17, -0.65, 0.665, 1.25), -webkit-transform 0.3s cubic-bezier(0.17, -0.65, 0.665, 1.25);
