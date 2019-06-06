@@ -17,8 +17,8 @@ var mysql = require('mysql');
 var connection = mysql.createConnection({
 	host: 'localhost',
 	user: 'root',
-	post: 3307,
-	password: '',
+	post: 3306,
+	password: 'na00879090',
 	database: 'my_db'
 });
 
@@ -45,7 +45,7 @@ app.post('/', function(req, res){
 	connection.query(sql, [name], function(error, results, fields){
 		if(results.length == 0){
 			res.render('login.html');
-		} 
+		}
 		else{
 			var db_pwd = results[0].password;
 
