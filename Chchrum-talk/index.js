@@ -35,11 +35,9 @@ var connection = mysql.createConnection({
 	host: 'localhost',
 	user: 'root',
 	post: 3306,
-<<<<<<< HEAD:my-app/index.js
+
 	password: 'na00879090',
-=======
-	password: '',
->>>>>>> 16522c4f193d89a2c548c26a18e9d286d59fb688:Chchrum-talk/index.js
+
 	database: 'my_db'
 });
 
@@ -134,6 +132,6 @@ io.on('connection', function (socket) {
   });
 });
 
-server.listen(3306, function() {
-	console.log('Example app listening on port 3306!');
+server.listen(3000, function() {
+	console.log('Example app listening on port 3000!');
 });
