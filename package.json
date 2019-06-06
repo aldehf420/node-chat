@@ -1,0 +1,13 @@
+{
+  "name": "your-app",
+  "version": "0.1.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": {
+    "name": "DH",
+    "email": "aldehf420@naver.com"
+  },
+  "homepage": "https://github.com/aldehf420/node-chat"
+}
