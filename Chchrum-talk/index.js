@@ -36,7 +36,7 @@ var connection = mysql.createConnection({
 	host: 'localhost',
 	user: 'root',
 	port: 3306, //3306포트의 데이터베이스를 불러옴
-	password: '123456',
+	password: '',
 	database: 'my_db'
 });
 
@@ -66,8 +66,6 @@ app.post('/', function(req, res){
 		else{
 			var db_id = results[0].id;  //'id'는 데이터베이스 칼럼 이름
 			var db_pwd = results[0].pwd;  //'pwd'또한 데이터베이스 칼럼 이름
-			console.log(db_id);
-			console.log(db_pwd.toString());
 
 			//암호해석
 			var decipher = crypto.createDecipher('aes256', 'password');
