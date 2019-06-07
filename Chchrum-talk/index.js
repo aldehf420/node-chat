@@ -17,6 +17,7 @@
 
 var express = require('express');
 var app = express();
+var crypto = require('crypto')
 
 //ejs (html을 server로 옮길때 필요)
 app.set('views', __dirname + '/views');
@@ -34,10 +35,10 @@ var mysql = require('mysql');
 var connection = mysql.createConnection({
 	host: 'localhost',
 	user: 'root',
+
 	post: 3306,
 
 	password: 'na00879090',
-
 	database: 'my_db'
 });
 
@@ -65,10 +66,15 @@ app.post('/', function(req, res){
 			res.render('login.html');
 		}
 		else{
-			var db_name = results[0].username;
-			var db_pwd = results[0].password;
+			var db_name = results[0].username;  //'username'는 데이터베이스 칼럼 이름
+			var db_pwd = results[0].password;  //'pwd'또한 데이터베이스 칼럼 이름
 
-			if(pwd == db_pwd){
+			//암호해석
+			var decipher = crypto.createDecipher('aes256', 'password');
+			decipher.update(db_pwd.toString(), 'hex', 'ascii');
+			var decipherd = decipher.final('ascii');
+
+			if(pwd == decipherd){
 				//res.redirect('/chat');
 				res.render('chat.html', {username : db_name});
 			}
@@ -79,6 +85,7 @@ app.post('/', function(req, res){
 	});
 });
 
+//회원가입 창
 app.get('/register', function(req, res) {
 	res.render('register.html');
 });
@@ -90,9 +97,13 @@ app.post('/register', function(req, res){
 	var pwdconf = req.body.pwdconf;
 
 	if(pwd == pwdconf){
+		//비밀번호 암호화 저장
+		var cipher = crypto.createCipher('aes256', 'password');
+		cipher.update(pwd, 'ascii', 'hex');
+		var cipherd = cipher.final('hex');
 		//DB에 쿼리 알리기
 		var sql = `INSERT INTO user_info VALUES(?, ?, ?)`;
-		connection.query(sql, [name, id, pwd], function(error, results, fields){
+		connection.query(sql, [name, id, cipherd], function(error, results, fields){
 
 		});
 
@@ -104,6 +115,7 @@ app.post('/register', function(req, res){
 	}
 });
 
+//채팅 창
 app.get('/chat', function(req, res) {
 	res.render('chat.html');
 });

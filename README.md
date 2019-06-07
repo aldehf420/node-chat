@@ -1,6 +1,5 @@
-![Chchrum-talk](./Chchrum-talk/assets/img/icon-image.png)
+<center><img width="400" alt="screen- new chat" src="https://github.com/aldehf420/node-chat/blob/master/Chchrum-talk/assets/img/new%20icon..png?raw=true"></center>
 
------------------
 
 
 **처음처럼 톡** 은 리눅스 데스크탑 기반의 오픈소스 채팅 웹 앱이다. <처음처럼 톡>은 <처음이조>에서 개발되었다.   
