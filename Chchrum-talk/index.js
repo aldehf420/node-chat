@@ -36,7 +36,7 @@ var connection = mysql.createConnection({
 	host: 'localhost',
 	user: 'root',
 	port: 3306, //3306포트의 데이터베이스를 불러옴
-	password: '',
+	password: '1234',
 	database: 'my_db'
 });
 
@@ -142,6 +142,6 @@ io.on('connection', function (socket) {
   });
 });
 
-server.listen(3307, function() {
-	console.log('Example app listening on port 3307!'); //3306은 데이터베이스가 사용하고있어서 다른포트 사용
+server.listen(3000, function() {
+	console.log('Example app listening on port 3000!');
 });

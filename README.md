@@ -1,6 +1,5 @@
-![Chchrum-talk](./Chchrum-talk/assets/img/icon-image.png)
+<center><img width="400" alt="screen- new chat" src="https://github.com/aldehf420/node-chat/blob/master/Chchrum-talk/assets/img/new%20icon..png?raw=true"></center>
 
------------------
 
 
 **처음처럼 톡** 은 리눅스 데스크탑 기반의 오픈소스 채팅 웹 앱이다. <처음처럼 톡>은 <처음이조>에서 개발되었다.   
@@ -18,7 +17,9 @@
 `최준호` | frontend | 디자인 및 개발
 
 ## Screenshots 
-![screen-login](./Chchrum-talk/assets/img/screen-login.png)
+<img width="300" alt="screen- new chat" src="https://user-images.githubusercontent.com/43145059/59086346-7118bb00-893c-11e9-9f3a-339cef593e2c.png">
+
+
 ![screen-chat](./Chchrum-talk/assets/img/screen-chat.png)
 
 
