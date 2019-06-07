@@ -13,10 +13,10 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit-icons.min.js"></script>
 </head>
 <body>
-	<div class="cont">
+	
 		<div class="demo">
-			<div class="login" style="height: 600px; margin-top: 100px;">
-				<div id="chatpanel" class="uk-panel uk-panel-scrollable uk-width-1-1" style="min-width: 100%; height: 600px;">
+			<div class="login">
+				<div id="chatpanel" class="uk-panel uk-panel-scrollable uk-width-1-1" style="min-width: 100%; height: 90%;">
 					<ul id = chatlog class="uk-list" style="color: white; font-size: 16px;" >
 					</ul>
 				</div>
@@ -30,7 +30,7 @@
 				</form>
 			</div>
 		</div>
-	</div>
+	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="/socket.io/socket.io.js"></script>
 	<script type="text/javascript">
@@ -40,22 +40,22 @@
 				username: "<%= username%>"
 			});
 			socket.on("login", function (data) {
-				$("#chatlog").append("<li style='border-radius: 5px; text-align: center; color: black; background-color: #ABADAF; opacity: 0.5; margin-bottom: 10px;'><strong>" + data + "</strong> has joined</li></ul>");
+				$("#chatlog").append("<li style='border-radius: 5px; text-align: center; color: white; background-color: darkgreen; opacity: 0.5; margin-bottom: 10px;'><strong>" + data + "</strong> has joined</li></ul>");
 			});
 			socket.on("logout", function (data) {
-				$("#chatlog").append("<li style='border-radius: 5px; text-align: center; color: black; background-color: #ABADAF; opacity: 0.5; margin-bottom: 10px;'><strong>" + data + "</strong> has exited</li></ul>");
+				$("#chatlog").append("<li style='border-radius: 5px; text-align: center; color: white; background-color: darkgreen; opacity: 0.5; margin-bottom: 10px;'><strong>" + data + "</strong> has exited</li></ul>");
 			});
 			socket.on("chat", function (data) {
 				var date = new Date();
 				var hour = date.getHours();
 				var minute = date.getMinutes();
 				if(data.username == "<%=username%>") {
-					$("#chatlog").append("<ul style='float: right;  opacity: 0.5; padding-left: 5px; padding-right:5px; border-radius: 5px;  margin: 10px; color: black; background-color: white; max-width: fit-content;'><li>" + data.msg + "</li></ul>");
+					$("#chatlog").append("<ul style='float: right; padding-left: 5px; padding-right:5px; border-radius: 5px;  margin: 10px; color: black; background-color: white; max-width: fit-content;'><li>" + data.msg + "</li></ul>");
 					$("#chatlog").append("<li style='float: right'>" + hour + ":" + minute + "</li>");
 					$("#chatlog").append("<li></li>");
 				}
 				else{
-					$("#chatlog").append("<ul style='float: left;  opacity: 0.5; padding-left: 5px; padding-right:5px; border-radius: 5px;  margin: 10px; color: black; background-color: white; max-width: fit-content;''><li><strong>" + data.username + "</strong>" + " : " + data.msg + "</li></ul>");
+					$("#chatlog").append("<ul style='float: left; padding-left: 5px; padding-right:5px; border-radius: 5px;  margin: 10px; color: black; background-color: white; max-width: fit-content;''><li><strong>" + data.username + "</strong>" + " : " + data.msg + "</li></ul>");
 					$("#chatlog").append("<li>" + hour + ":" + minute + "</li>");
 					$("#chatlog").append("<li></li>");
 				}
