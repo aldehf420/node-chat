@@ -35,7 +35,7 @@ var connection = mysql.createConnection({
 	host: 'localhost',
 	user: 'root',
 	post: 3306,
-	password: '',
+	password: '1234',
 	database: 'my_db'
 });
 
@@ -130,6 +130,6 @@ io.on('connection', function (socket) {
   });
 });
 
-server.listen(3306, function() {
-	console.log('Example app listening on port 3306!');
+server.listen(3000, function() {
+	console.log('Example app listening on port 3000!');
 });
