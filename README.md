@@ -19,6 +19,8 @@
 
 ## Screenshots 
 <img width="300" alt="screen- new chat" src="https://user-images.githubusercontent.com/43145059/59086346-7118bb00-893c-11e9-9f3a-339cef593e2c.png">
+
+
 ![screen-chat](./Chchrum-talk/assets/img/screen-chat.png)
 
 
