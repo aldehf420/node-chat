@@ -64,8 +64,8 @@ app.post('/', function(req, res){
 			res.render('login.html');
 		}
 		else{
-			var db_id = results[0].id;  //'id'는 데이터베이스 칼럼 이름
-			var db_pwd = results[0].pwd;  //'pwd'또한 데이터베이스 칼럼 이름
+			var db_name = results[0].username;  //'username'는 데이터베이스 칼럼 이름
+			var db_pwd = results[0].password;  //'pwd'또한 데이터베이스 칼럼 이름
 
 			//암호해석
 			var decipher = crypto.createDecipher('aes256', 'password');
@@ -74,7 +74,7 @@ app.post('/', function(req, res){
 
 			if(pwd == decipherd){
 				//res.redirect('/chat');
-				res.render('chat.html', {username : db_id});
+				res.render('chat.html', {username : db_name});
 			}
 			else{
 				res.render('login.html');
