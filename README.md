@@ -18,7 +18,7 @@
 `최준호` | frontend | 디자인 및 개발
 
 ## Screenshots 
-![screen-login](./Chchrum-talk/assets/img/screen- new chat.png)
+![screen- new chat](./Chchrum-talk/assets/img/screen- new chat.png)
 ![screen-chat](./Chchrum-talk/assets/img/screen-chat.png)
 
 
