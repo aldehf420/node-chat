@@ -1,5 +1,4 @@
-![Chchrum-talk](./Chchrum-talk/assets/img/icon-image.png)
-
+<center><img width="300" alt="screen- new chat" src="https://github.com/aldehf420/node-chat/blob/master/Chchrum-talk/assets/img/new%20icon..png?raw=true"></center>
 -----------------
 
 
