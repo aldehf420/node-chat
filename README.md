@@ -17,10 +17,7 @@
 `최준호` | frontend | 디자인 및 개발
 
 ## Screenshots
-<img width="300" alt="screen- new chat" src="https://user-images.githubusercontent.com/43145059/59086346-7118bb00-893c-11e9-9f3a-339cef593e2c.png">
-
-
-![screen-chat](./Chchrum-talk/assets/img/screen-chat.png)
+<img width="500" alt="screen- new chat" src="https://github.com/aldehf420/node-chat/blob/master/Chchrum-talk/assets/img/screenshot.png?raw=true">
 
 
 ## Installation
