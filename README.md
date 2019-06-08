@@ -7,14 +7,14 @@
 
 
 ## 처음이조
-이름 | 분야 | 담당 | 비고
+이름 | 분야 | 담당 
 ---|:---:|---:
-`고동현` | backend | 서버 연동 | 팀장
-`백승민` | backend | DB 연동 | -
-`황호철` | backend | 패키징 | -
-`문수림` | frontend | 디자인 | 팀장
-`박재현` | frontend | 개발 | -
-`최준호` | frontend | 디자인 및 개발 | -
+`고동현` | backend | 서버 연동 및 팀장
+`백승민` | backend | DB 연동
+`황호철` | backend | 패키징
+`문수림` | frontend | 디자인 및 서기
+`박재현` | frontend | 개발 
+`최준호` | frontend | 디자인 및 개발
 
 ## Screenshots
 <img width="500" alt="screen- new chat" src="https://github.com/aldehf420/node-chat/blob/master/Chchrum-talk/assets/img/screenshot.png?raw=true">
