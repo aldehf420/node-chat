@@ -1,5 +1,5 @@
 {
-  "name": "Chchrum-talk",
+  "name": "SOJU-talk",
   "version": "0.1.0",
   "main": "main.js",
   "scripts": {
@@ -9,5 +9,43 @@
     "name": "DH",
     "email": "aldehf420@naver.com"
   },
-  "homepage": "https://github.com/aldehf420/node-chat"
+  "homepage": "https://github.com/aldehf420/node-chat",
+  "build": {
+    "appId": "com.exam.exam-electron",
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "assets/icons/win/icon-image.ico"
+    },
+    "nsis": {
+      "oneClick": true,
+      "installerHeaderIcon": "assets/icons/win/icon-image.ico"
+    },
+    "mac": {
+      "target": "dmg",
+      "category": "public.app-category.graphics-design",
+      "icon": "assets/icons/mac/icon-image.icns"
+    },
+    "dmg": {
+      "icon": "assets/icons/mac/icon-image.icns"
+    },
+    "linux": {
+      "icon": "assets/icons/png/icon-image.png",
+      "category": "Development",
+      "target": [
+        {
+          "target": "deb",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
+      ],
+      "maintainer": "...",
+      "desktop": {
+        "Encoding": "UTF-8"
+      }
+    }
+  }
 }
