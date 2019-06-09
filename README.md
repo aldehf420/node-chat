@@ -39,4 +39,4 @@ cd dist && sudo dpkg -i Chchrum-Talk_1.0.0_amd64.deb
 
 ## License
 
-ISC
+GPL, MIT
