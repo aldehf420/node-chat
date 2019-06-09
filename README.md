@@ -27,7 +27,8 @@ To install the current release:
 - Git clone  
 - Insert in terminal  
 ```
-cd node-chat/Chchrum-talk/dist && sudo dpkg -i Chchrum-Talk_1.0.0_amd64.deb
+cd node-chat/Chchrum-talk && electron-builder
+cd dist && sudo dpkg -i Chchrum-Talk_1.0.0_amd64.deb
 ```
 
 
