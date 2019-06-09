@@ -31,7 +31,7 @@
       "icon": "assets/icons/mac/icon-image.icns"
     },
     "linux": {
-      "icon": "assets/icons/png/icon-image.png",
+      "icon": "./assets/icons/png/",
       "category": "Development",
       "target": [
         {
