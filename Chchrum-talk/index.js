@@ -38,7 +38,7 @@ var connection = mysql.createConnection({
 
 	post: 3306,
 
-	password: 'na00879090',
+	password: '',
 	database: 'my_db'
 });
 
